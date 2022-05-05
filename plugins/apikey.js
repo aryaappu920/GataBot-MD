@@ -1,4 +1,4 @@
-let handler = async (m, { conn, usedPrefix }) => m.reply(`
+let handler = async m => m.reply(`
 ┌─〔 *APIKEY FREE* 〕
 ├➥ *Bany :* adadeh
 ├➥ *leyscoders:* MIMINGANZ

@@ -1,5 +1,4 @@
-let handler = async (m, { conn, usedPrefix }) => {  //m.reply(`
-await conn.sendBut(m.chat, `Tidak ada absen berlangsung!
+let handler = async (m, { conn, usedPrefix }) => {  m.reply(`
 ┌─〔 *APIKEY FREE* 〕
 ├➥ *Bany :* adadeh
 ├➥ *leyscoders:* MIMINGANZ
@@ -31,7 +30,8 @@ await conn.sendBut(m.chat, `Tidak ada absen berlangsung!
 ┃ 「 *Pesan Dari My Owner* 」
 ┃ > *Trimakasih Telah Membantu*
 ┃ *Jalanya Bot Ini :)*
-┗━━━━━━━━━━━━━━━━`, wm, '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', `${usedPrefix}menu`, m)
+┗━━━━━━━━━━━━━━━━`.trim()
+conn.sendBut(m.chat, `Tidak ada absen berlangsung! , wm, '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', `.menu`, m)
 
   
 handler.help = ['apikey']

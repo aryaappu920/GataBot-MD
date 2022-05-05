@@ -63,7 +63,7 @@ global.a1 = '〘 ⚠️ 〙 ╰⊱🌩⊱*𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾�
 global.advertencia = a1
 global.i1 '〘 ❕ 〙 ╰⊱💫⊱*𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉 | 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉*⊱💫⊱╮\n'
 global.informacion = i1
-global.f1 = '〘 ❌ 〙 ╰⊱💔⊱*𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍*⊱💔⊱╮'
+global.f1 = '〘 ❌ 〙 ╰⊱💔⊱*𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍*⊱💔⊱╮\n'
 global.fallo = f1
 global.m1 = '〘 ❗️ 〙 ╰⊱😿⊱*𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂*⊱😿⊱╮\n'
 global.mal = m1

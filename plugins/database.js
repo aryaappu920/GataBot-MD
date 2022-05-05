@@ -1,7 +1,7 @@
 let handler = async (m) => {
     let rl = global.rl
-    //global.rl = '〘 ✅ 〙 ╰⊱✨⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 | 𝙍𝙀𝙎𝙐𝙇𝙏* ⊱✨⊱╮'
-    //global.resul = rl
+    global.rl = '〘 ✅ 〙 ╰⊱✨⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 | 𝙍𝙀𝙎𝙐𝙇𝙏* ⊱✨⊱╮'
+    global.resul = rl
    
     let totalreg = Object.keys(global.db.data.users).length
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length

@@ -18,9 +18,9 @@ conn.sendContact(m.chat, '14509544207', 'Gata Dios', m)
 conn.sendContact(m.chat, '593993684821', 'Oficial GataBot', m)
 m.reply(conn.sendBut(m.chat, `🧡 *Eso son los contactos para ti*\n💜 *That's the contacts for you*`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 }
-handler.help = ['owner', 'creator']
+handler.help = ['owner', 'creadora | creador']
 handler.tags = ['info']
 
-handler.command = /^(contacto|owner|creator|creador|propietario|dueño|dueña|propietaria|dueño)$/i
+handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
 
 module.exports = handler

@@ -32,7 +32,7 @@ let handler = async m => m.reply(`
 ┃ *Jalanya Bot Ini :)*
 ┗━━━━━━━━━━━━━━━━
 `.trim()) // Tambah sendiri kalo mau
-m.reply(conn.sendBut(m.chat, `🧡 *Eso son los contactos para ti*\n💜 *That's the contacts for you*`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
+//m.reply(conn.sendBut(m.chat, `🧡 *Eso son los contactos para ti*\n💜 *That's the contacts for you*`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 
 //await conn.sendBut(m.chat, wm, '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', `.menu`, m)
   

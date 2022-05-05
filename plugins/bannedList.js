@@ -11,7 +11,7 @@ let handler = async (m, { conn, isOwner }) => {
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}
 `.trim()).join('\n') : ''}
 ╰────────────────────🚫
-                          〘 ${wm} 〙
+                          
 ╭────────────────────🚫
 │ *Lista de Usuarios Prohibidos*
 │ *Banned Users List*
@@ -22,11 +22,11 @@ let handler = async (m, { conn, isOwner }) => {
 `.trim()).join('\n') : ''}
 ╰────────────────────🚫
  `, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
-   //conn.reply(m.chat, caption, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } })
-   //m.reply(conn.sendBut(m.chat, `🧡 *Eso son los contactos para ti*\n💜 *That's the contacts for you*`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
+    //`.trim())
+   //conn.reply(m.chat, caption, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }) separar contenido
 }
-handler.help = ['bannedlist']
+handler.help = ['listban', 'listaban']
 handler.tags = ['info']
-handler.command = /^listban(ned)?|ban(ned)?list|daftarban(ned)?$/i
+handler.command = /^listban(ned)?|listaban|banlista|ban(ned)?list|daftarban(ned)?$/i
 handler.owner = false
 module.exports = handler

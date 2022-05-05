@@ -30,7 +30,6 @@ let handler = async m => m.reply(`
 ┃ ${wm}
 ╰━━━━━━━━━━━━━━━━⬣
 `.trim()) // Tambah sendiri kalo mau
-await conn.sendBut(m.chat, `Tidak ada absen berlangsung!`, wm, 'Mulai', `${usedPrefix}mulaiabsen`, m)
 
 handler.help = ['apikey', 'apikeyy']
 handler.tags = ['info']

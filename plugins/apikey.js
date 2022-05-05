@@ -1,4 +1,4 @@
-let handler = async m => m.reply(`
+let handler = async (m, { conn, usedPrefix }) => m.reply(`
 ┌─〔 *APIKEY FREE* 〕
 ├➥ *Bany :* adadeh
 ├➥ *leyscoders:* MIMINGANZ
@@ -32,42 +32,7 @@ let handler = async m => m.reply(`
 ┃ *Jalanya Bot Ini :)*
 ┗━━━━━━━━━━━━━━━━
 `.trim()) // Tambah sendiri kalo mau
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-     templateMessage: {
-         hydratedTemplate: {
-           hydratedContentText: anu,
-           locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./src/welcome.jpg')}, 
-           hydratedFooterText: wm,
-           hydratedButtons: [{
-             urlButton: {
-               displayText: '📍instagram',
-               url: instagram
-               }
-               
-             },
-             {
-             quickReplyButton: {
-               displayText: 'Tanpa Watermark',
-               id: `.tiktoknowm ${text}`,
-             }
-           },
-           {
-             quickReplyButton: {
-               displayText: 'dengan watermark',
-               id: `.tiktokwm ${text}`,
-             }
-           }]
-         }
-       }
-     }), { userJid: m.sender, quoted: m });
-    //conn.reply(m.chat, text.trim(), m)
-    return await conn.relayMessage(
-         m.chat,
-         template.message,
-         { messageId: template.key.id }
-     )
-}
+await conn.sendBut(m.chat, `Tidak ada absen berlangsung!`, wm, 'Mulai', `${usedPrefix}mulaiabsen`, m)
 
 //await conn.sendBut(m.chat, wm, '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', `.menu`, m)
   

@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-╭━━〔 🔑 *APIKEY GRATIS | APIKEY FREE* 〕━⬣
+╭━〔 🔑 *APIKEY GRATIS | APIKEY FREE* 〕━⬣
 ┃➥ *Bany :* adadeh
 ┃➥ *leyscoders:* MIMINGANZ
 ┃➥ *xteam:* MIMINETBOT

@@ -11,7 +11,7 @@ let handler = async (m, { conn, isOwner }) => {
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}
 `.trim()).join('\n') : ''}
 ╰────────────────────🚫
-                    〘 ${wm} 〙
+                          〘 ${wm} 〙
 ╭────────────────────🚫
 │ *Lista de Usuarios Prohibidos*
 │ *Banned Users List*

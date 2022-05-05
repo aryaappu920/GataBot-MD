@@ -23,7 +23,8 @@ let handler = async (m, { conn, isOwner }) => {
 ╰────────────────────🚫
 `.trim()
     conn.reply(m.chat, caption, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } })
-    m.reply(conn.sendBut(m.chat, `🧡 *Eso son los contactos para ti*\n💜 *That's the contacts for you*`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
+    conn.sendHydrated(m.chat, wm, null, 'https://www.paypal.me/TheShadowBrokers133', '𝙿𝙰𝚈𝙿𝙰𝙻', null, null, [['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']], m)}
+    //m.reply(conn.sendBut(m.chat, `🧡 *Eso son los contactos para ti*\n💜 *That's the contacts for you*`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 }
 handler.help = ['bannedlist']
 handler.tags = ['info']

@@ -292,7 +292,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
                 }, {
                   "title": "☰ 𝘼𝙣𝙞𝙢𝙚 𝙈𝙚𝙣𝙪.",
                   "description": "Mostrar menú animado.\nShow Animated Menu",
-                   m.reply( ` HOLA`)
+                   "m.reply" ` HOLA`
                 }, {
                   "title": "☰ STICKER & CONVERTER",
                   "description": "Menampilkan Menu Sticker",

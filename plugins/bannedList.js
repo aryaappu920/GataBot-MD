@@ -20,8 +20,7 @@ m.reply(conn.sendBut(m.chat, `╭───────────────�
 │ ${i + 1}. ${conn.getName(jid) == undefined ? 'Unknown' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}
 `.trim()).join('\n') : ''}
-╰────────────────────🚫
- `, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
+╰────────────────────🚫`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
     //`.trim())
    //conn.reply(m.chat, caption, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }) separar contenido
 }

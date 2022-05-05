@@ -50,6 +50,5 @@ handler.botAdmin = false
 
 handler.fail = null
 handler.limit = false
-handler.exp = 5
 
 module.exports = handler

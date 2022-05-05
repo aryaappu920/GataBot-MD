@@ -93,8 +93,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'absen': 'MENU ABSEN',
     'vote': '*MENU VOTING*',
   }
-  if (teks == 'anime') tags = {
-  '*MENU ANIME*',
+  if (teks == 'anime') {
+   '*MENU ANIME*',
   }
   if (teks == 'sticker') tags = {
   'sticker': '*MENU CONVERT*',

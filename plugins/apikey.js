@@ -30,7 +30,9 @@ let handler = async m => m.reply(`
 ┃ ${wm}
 ╰━━━━━━━━━━━━━━━━⬣
 `.trim()) // Tambah sendiri kalo mau
-handler.help = ['apikey']
+await conn.sendBut(m.chat, `Tidak ada absen berlangsung!`, wm, 'Mulai', `${usedPrefix}mulaiabsen`, m)
+
+handler.help = ['apikey', 'apikeyy']
 handler.tags = ['info']
 handler.command = /^apikey$/i
 handler.rowner = true

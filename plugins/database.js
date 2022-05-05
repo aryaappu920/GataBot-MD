@@ -1,5 +1,5 @@
 let handler = async (m) => {
-    r = global.r
+    let r = global.r
     let totalreg = Object.keys(global.db.data.users).length
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
    m.reply(conn.sendBut(m.chat, `${r} *En la base de datos hay ${totalreg} Usuarios*.\n*In the database I have registered ${totalreg} Users*.`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))

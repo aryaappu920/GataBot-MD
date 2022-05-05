@@ -32,6 +32,12 @@ let handler = async m => m.reply(`
 ┃ *Jalanya Bot Ini :)*
 ┗━━━━━━━━━━━━━━━━
 `.trim()) // Tambah sendiri kalo mau
+{
+             quickReplyButton: {
+               displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪',
+               id: '.menu',
+}
+  
 handler.help = ['apikey']
 handler.tags = ['info']
 handler.command = /^apikey$/i

@@ -1,8 +1,8 @@
 let handler = async (m, { conn, isOwner }) => {
     let chats = Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned)
     let users = Object.entries(global.db.data.users).filter(user => user[1].banned)
-    m.reply(conn.sendBut(m.chat, `
-╭────────────────────🚫
+    
+m.reply(conn.sendBut(m.chat, `╭────────────────────🚫
 │ *Lista de chats prohibidos*
 │ *List of banned chats*
 │┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈

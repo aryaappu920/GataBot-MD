@@ -1,4 +1,5 @@
-let handler = async m => m.reply(`
+let handler = async (m, { conn, usedPrefix }) => {  //m.reply(`
+await conn.sendBut(m.chat, `Tidak ada absen berlangsung!
 ┌─〔 *APIKEY FREE* 〕
 ├➥ *Bany :* adadeh
 ├➥ *leyscoders:* MIMINGANZ
@@ -30,13 +31,8 @@ let handler = async m => m.reply(`
 ┃ 「 *Pesan Dari My Owner* 」
 ┃ > *Trimakasih Telah Membantu*
 ┃ *Jalanya Bot Ini :)*
-┗━━━━━━━━━━━━━━━━
-`.trim()) // Tambah sendiri kalo mau
-{
-             quickReplyButton: {
-               displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪',
-               id: '.menu',
-}
+┗━━━━━━━━━━━━━━━━`, wm, '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', `${usedPrefix}menu`, m)
+
   
 handler.help = ['apikey']
 handler.tags = ['info']
@@ -52,5 +48,6 @@ handler.botAdmin = false
 
 handler.fail = null
 handler.limit = false
+handler.exp = 5
 
 module.exports = handler

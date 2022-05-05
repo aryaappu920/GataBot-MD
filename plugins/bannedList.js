@@ -24,7 +24,7 @@ m.reply(conn.sendBut(m.chat, `╭───────────────�
     //`.trim())
    //conn.reply(m.chat, caption, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }) separar contenido
 }
-handler.help = ['listban', 'listaban']
+handler.help = ['listaban | listban',]
 handler.tags = ['info']
 handler.command = /^listban(ned)?|listaban|banlista|ban(ned)?list|daftarban(ned)?$/i
 handler.owner = false

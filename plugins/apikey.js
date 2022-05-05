@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-╭━━〔 *APIKEY GRATIS | APIKEY FREE* 〕━━⬣
+╭━━〔 🔑 *APIKEY GRATIS | APIKEY FREE* 〕━⬣
 ┃➥ *Bany :* adadeh
 ┃➥ *leyscoders:* MIMINGANZ
 ┃➥ *xteam:* MIMINETBOT
@@ -27,7 +27,7 @@ let handler = async m => m.reply(`
 ┃➥ *Zeksapi* = apivinz
 ┃➥ *shizukaapi* = itsmeiky633
 ┃➥ *apivhtear* = 1BlnApiIkyPake
-╰━━━━━━〘 ${wm} 〙━━━━━⬣
+╰━━━━━━〘 ${wm} 〙━━━━━━━⬣
 `.trim())  //Tambah sendiri kalo mau
 
 

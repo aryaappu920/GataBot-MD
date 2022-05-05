@@ -1,5 +1,4 @@
-let handler = async m => //m.reply(`
-let menu =` 
+let handler = async m => m.reply(`
 ╭━━〔 *APIKEY GRATIS | APIKEY FREE* 〕━━⬣
 ┃➥ *Bany :* adadeh
 ┃➥ *leyscoders:* MIMINGANZ
@@ -28,12 +27,8 @@ let menu =`
 ┃➥ *Zeksapi* = apivinz
 ┃➥ *shizukaapi* = itsmeiky633
 ┃➥ *apivhtear* = 1BlnApiIkyPake
-╰━━━━━━━${wm} 〙━━━━━━━⬣
-𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨`.trim()
-conn.send3ButtonLoc(m.chat, (await fetch(pp)).buffer(), `
-⁖ᯓ፨҈༺ 𝙂𝙖𝙩𝙖𝘽𝙤𝙩 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨 ༻፨҈ᯓ⁖
-`.trim(), menu, '🎮 𝙈𝙀𝙉𝙐 𝘿𝙀 𝙅𝙐𝙀𝙂𝙊𝙎 🎮', `#menujuego`, '🚀 𝙈𝙀𝙉𝙐 𝘿𝙀 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 🚀', `#menudescarga`, '🔐 𝙂𝙀𝙎𝙏𝙄𝙊𝙉 𝘿𝙀 𝙂𝙍𝙐𝙋𝙊 🔐', `#menugrupo`, m, false, { contextInfo: { mentionedJid }})}
-//`.trim())  Tambah sendiri kalo mau
+╰━━━━━━〘 ${wm} 〙━━━━━⬣
+`.trim())  //Tambah sendiri kalo mau
 
 
 handler.help = ['apikey']

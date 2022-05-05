@@ -31,7 +31,7 @@ let handler = async m => m.reply(`
 ╰━━━━━━━━━━━━━━━━⬣
 `.trim()) // Tambah sendiri kalo mau
 
-handler.help = ['apikey', 'apikeyy']
+handler.help = ['apikey']
 handler.tags = ['info']
 handler.command = /^apikey$/i
 handler.rowner = true

@@ -23,6 +23,7 @@ let handler = async (m, { conn, isOwner }) => {
 ╰────────────────────🚫
 `.trim()
     conn.reply(m.chat, caption, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } })
+    m.reply(conn.sendBut(m.chat, `🧡 *Eso son los contactos para ti*\n💜 *That's the contacts for you*`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 }
 handler.help = ['bannedlist']
 handler.tags = ['info']

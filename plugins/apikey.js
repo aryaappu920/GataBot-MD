@@ -23,7 +23,7 @@ let handler = async m => m.reply(`
 ┃➥ *xteamkey* = AbilGanss
 ┃➥ *TobzKey* = Bidmzz1sJ2L1TKyqaMEU
 ┃➥ *ApiDevolover* = HokageBR
-┃➥ *TechApi* = ┃ 5BNIDH-1T0kPj-gWqG6q-sHtuHA-AWBSgZ
+┃➥ *TechApi* =   ┃ 5BNIDH-1T0kPj-gWqG6q-sHtuHA-AWBSgZ
 ┃➥ *Zeksapi* = apivinz
 ┃➥ *shizukaapi* = itsmeiky633
 ┃➥ *apivhtear* = 1BlnApiIkyPake

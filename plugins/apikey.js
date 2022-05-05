@@ -30,9 +30,8 @@ let handler = async (m, { conn, usedPrefix }) => {  m.reply(`
 ┃ 「 *Pesan Dari My Owner* 」
 ┃ > *Trimakasih Telah Membantu*
 ┃ *Jalanya Bot Ini :)*
-┗━━━━━━━━━━━━━━━━`.trim()
-conn.sendBut(m.chat, `Tidak ada absen berlangsung! , wm, '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', `.menu`, m)
-
+┗━━━━━━━━━━━━━━━━`.trim())
+await conn.sendBut(m.chat, wm, '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', `.menu`, m)
   
 handler.help = ['apikey']
 handler.tags = ['info']

@@ -519,7 +519,7 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('America/Los_Angeles').format('HH')
-  res = "Selamat DiniHari"
+  res = "👋 *BIENVENIDO/(A) | WELCOME* 👋"
   if (time >= 4) {
     res = "🌇 *Buenos Días | Good Morning* ⛅"
   }

@@ -29,16 +29,16 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let { dl_link, thumb, title, filesize, filesizeF, description, publishedTime, durationH, viewH } = yt
 let anu =  `
 ╭━━━━━━━━━━━━━━━━⬣
-┃ *Título | Title* 
-┃ ${title}
-┃ *Tamaño del Audio | Audio Size* 
-┃ ${filesizeF}
-┃ *Tamaño del vídeo | Video Size* 
-┃ ${yt2.filesizeF}
-┃ *Servidor | Server* 
-┃ ${usedServer}
-┃ *Enlace | Link* 
-┃ ${vid.url}
+┃ 💖  *Título | Title* c
+┃ ➲ ${title}
+┃ 🔊 *Tamaño del Audio | Audio Size* 
+┃ ➲ ${filesizeF}
+┃ 🎞 *Tamaño del vídeo | Video Size* 
+┃ ➲ ${yt2.filesizeF}
+┃ 💻 *Servidor | Server* 
+┃ ➲ ${usedServer}
+┃ 🎁 *Enlace | Link* 
+┃ ➲ ${vid.url}
 ╰━━━━━━━━━━━━━━━━⬣
 ` 
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({

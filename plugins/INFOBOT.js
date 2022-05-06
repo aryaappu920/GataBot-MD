@@ -30,7 +30,7 @@ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
            hydratedFooterText: gt,
            hydratedButtons: [{
              urlButton: {
-               displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
+               displayText: '𝙂𝙞𝙩𝙃𝙪𝙗',
                url: github
               }   
             },
@@ -42,19 +42,19 @@ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
            },
              {
               urlButton: {
-               displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
+               displayText: '𝙔𝙤𝙪𝙏𝙪𝙗𝙚',
                url: youtube	           
               }
             },	     
               {
              quickReplyButton: {
-               displayText: '𝙋𝙚𝙧𝙛𝙞𝙡 | 𝙋𝙧𝙤𝙛𝙞𝙡𝙚',
-               id: '.profile',
+               displayText: '𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 | 𝙎𝙥𝙚𝙚𝙙',
+               id: '.ping',
              }
 	   },
              {
              quickReplyButton: {
-               displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
+               displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪',
                id: '.menu',
               }
            }]

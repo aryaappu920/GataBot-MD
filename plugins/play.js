@@ -28,12 +28,16 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (yt2 === false) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Todos los servidores fallaron.*\n*All servers failed.*'
   let { dl_link, thumb, title, filesize, filesizeF, } = yt
 let anu =  `
-*Judul:* ${title}
-*Ukuran File Audio:* ${filesizeF}
-*Ukuran File Video:* ${yt2.filesizeF}
-*Server y2mate:* ${usedServer}
-*link sumber:* 
-${vid.url}
+💖  *Título | Title* 
+➲ ${title}
+🔊 *Tamaño del Audio | Audio Size* 
+➲ ${filesizeF}
+🎞 *Tamaño del vídeo | Video Size* 
+➲ ${yt2.filesizeF}
+💻 *Servidor | Server* 
+➲ ${usedServer}
+🎁 *Enlace | Link* 
+➲ ${vid.url}
 
 ` 
 /*

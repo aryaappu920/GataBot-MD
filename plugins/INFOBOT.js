@@ -17,9 +17,28 @@ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}
 ├◌ *Usuario(s) Prohibido(s) | Prohibited Users*
 ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 ╰━━━━━━━━━━━━━━━━⬣
-    `.trim()
-conn.sendHydrated(m.chat, str, wm, null, 'https://www.paypal.me/TheShadowBrokers133', '𝙿𝙰𝚈𝙿𝙰𝙻', null, null, [['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']], m)}
-conn.reply(str)
+    `const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           hydratedContentText: esce,
+           locationMessage: { 
+           jpegThumbnail: await (await fetch(fla + bear)).buffer() },           
+           hydratedFooterText: wm,
+           hydratedButtons: [{
+             urlButton: {
+               displayText: '📍Instagram',
+               url: instagram
+             }
+
+           },
+               {
+             quickReplyButton: {
+               displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
+               id: '.menu',
+             }
+
+           }]
+         }
 }
 handler.help = ['botstatus']
 handler.tags = ['info']

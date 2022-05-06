@@ -237,7 +237,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 }                        
       const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
-            title: `╭─────────────────────❀\n│${ucapan()}\n│💖´ *•.¸💝¸.•** *${name}* **•.¸💝¸.•*💖\n╰─────────────────────❀`,
+            title: `╭─────────────────────❀\n│${ucapan()}\n│💖´•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰─────────────────────❀`,
             description: `╭━━━━━━〔 *${wm}* 〕━━━━━━⬣	    
 ┃✪ *Tiempo Actual | Current Time*	    
 ┃➺ ${time}   
@@ -518,8 +518,8 @@ function clockString(ms) {
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function ucapan() {
-  const time = moment.tz('America/Los_Angeles').format('HH')
-  res = "👋 *BIENVENIDO/(A) | WELCOME* 👋"
+  const time = moment.tz('Asia/Jakarta').format('HH')  //America/Los_Angeles  Asia/Jakarta
+  res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
   if (time >= 4) {
     res = "🌇 *Buenos Días | Good Morning* ⛅"
   }

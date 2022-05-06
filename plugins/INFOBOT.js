@@ -50,7 +50,7 @@ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
          { messageId: template.key.id }
      )
 }
-}
+
 handler.help = ['botstatus']
 handler.tags = ['info']
 handler.command = /^botstat(us)?$/i

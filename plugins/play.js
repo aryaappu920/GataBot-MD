@@ -30,14 +30,6 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 let anu =  `
 *Título | Title* 
 ${title}
-*Descripcion*
-${description}
-*Publicado*
-${publishedTime}
-*Vistas*
-${viewH}
-*Duracion*
-${durationH}
 *Tamaño del Audio | Audio Size* 
 ${filesizeF}
 *Tamaño del vídeo | Video Size* 

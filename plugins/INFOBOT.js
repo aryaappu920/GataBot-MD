@@ -6,15 +6,16 @@ let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
 bear = "Source Code"
 ye = `@${m.sender.split`@`[0]}`
-let esce = `
-Hai ${ye} 
+let esce = ` 
 ╭━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━⬣
+┃*¡Hola | Hi!* ${ye} 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ 𓃠 *Versión de GataBot-MD*
+┃➥ ${vs}
 ┃ღ *Fecha | Date*
 ┃➥ %week %date
 ┃ ◌ *Activo Durante | Active During* 
 ┃➥ ${uptime}
-┃𓃠 *Versión de GataBot-MD*
-┃➥ ${vs}
 ┃ ◌ *Modo | Mode:* 
 ┃➥ ${global.opts['self'] ? 'Self' : 'publik'}
 ┃ ◌ *Usuario(s) | Users* 

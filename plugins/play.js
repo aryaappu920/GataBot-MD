@@ -26,7 +26,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   }
   if (yt === false) throw 'semua server gagal'
   if (yt2 === false) throw 'semua server gagal'
-  let { dl_link, thumb, title, filesize, filesizeF, description, publishedTime, durationH, viewH } = yt
+  let { dl_link, thumb, title, filesize, filesizeF, } = yt
 let anu =  `
 ╭━━━━━━━━━━━━━━━━⬣
 ┃ 💖  *Título | Title* 
@@ -49,8 +49,7 @@ let anu =  `
            jpegThumbnail: await (await fetch(thumb)).buffer() }, 
            hydratedFooterText: `si el video no coincide escriba 
            .yta enlace de YouTube para descargar el audio y escriba 
-           .ytv enlace YouTube para descargar video
-${gt}`,
+           .ytv enlace YouTube para descargar video ${gt}`,
            hydratedButtons: [{
              urlButton: {
                displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',

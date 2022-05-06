@@ -36,7 +36,7 @@ let anu =  `
 ${vid.url}
 
 `
-     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     /*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: anu,
@@ -48,7 +48,11 @@ dan ketik .ytv link YouTube Untuk Mengunduh Video`,
            hydratedButtons: [{
              urlButton: {
                displayText: '📍instagram',
-               url: instagram
+               url: instagram*/
+
+
+
+
              }
 
            },

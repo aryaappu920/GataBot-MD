@@ -28,25 +28,18 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (yt2 === false) throw 'semua server gagal'
   let { dl_link, thumb, title, filesize, filesizeF, description, publishedTime, durationH, viewH } = yt
 let anu =  `
-*Título | Title* 
-${title}
-*Descripcion*
-${description}
-*Publicado*
-${publishedTime}
-*Vistas*
-${viewH}
-*Duracion*
-${durationH}
-*Tamaño del Audio | Audio Size* 
-${filesizeF}
-*Tamaño del vídeo | Video Size* 
-${yt2.filesizeF}
-*Servidor | Server* 
-${usedServer}
-*Enlace | Link* 
-${vid.url}
-
+╭━━━━━━━━━━━━━━━━⬣
+┃ *Título | Title* 
+┃ ${title}
+┃ *Tamaño del Audio | Audio Size* 
+┃ ${filesizeF}
+┃ *Tamaño del vídeo | Video Size* 
+┃ ${yt2.filesizeF}
+┃ *Servidor | Server* 
+┃ ${usedServer}
+┃ *Enlace | Link* 
+┃ ${vid.url}
+╰━━━━━━━━━━━━━━━━⬣
 ` 
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -56,10 +49,11 @@ ${vid.url}
            jpegThumbnail: await (await fetch(thumb)).buffer() }, 
            hydratedFooterText: `jika video tidak sesuai
 silahkan ketik .yta link YouTube untuk mengunduh audio
-dan ketik .ytv link YouTube Untuk Mengunduh Video`,
+dan ketik .ytv link YouTube Untuk Mengunduh Video
+${gt}`,
            hydratedButtons: [{
              urlButton: {
-               displayText: '📍instagram',
+               displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
                url: instagram
 //aqui
 
@@ -68,21 +62,21 @@ dan ketik .ytv link YouTube Untuk Mengunduh Video`,
            },
                {
              quickReplyButton: {
-               displayText: 'video 360p',
+               displayText: '𝙑𝙞𝙙𝙚𝙤 360𝙥',
                id: `.ytmp4 ${vid.url}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: 'video 720p',
+               displayText: '𝙑𝙞𝙙𝙚𝙤 720𝙥',
                id: `.ytv720 ${vid.url}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: 'Audio',
+               displayText: '𝘼𝙪𝙙𝙞𝙤',
                id: `.ytmp3 ${vid.url}`,
              }
 

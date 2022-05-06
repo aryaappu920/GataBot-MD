@@ -48,8 +48,8 @@ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 	   },
              {
              quickReplyButton: {
-               displayText: '𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 | 𝙎𝙥𝙚𝙚𝙙',
-               id: '.ping',
+               displayText: '𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪',
+               id: '.allmenu',
              }
 	   },
              {

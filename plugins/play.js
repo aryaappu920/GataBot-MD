@@ -24,8 +24,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
       m.reply(`╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Servidor | Server* ${server} ${servers.length >= i + 1 ? '' : '\nVuelva a intentar o informe el error para solucionarlo.\nPlease try again or report the error to fix it.'}`)
     }
   }
-  if (yt === false) throw 'semua server gagal'
-  if (yt2 === false) throw 'semua server gagal'
+  if (yt === false) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Todos los servidores fallaron.*\n*All servers failed.*'
+  if (yt2 === false) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Todos los servidores fallaron.*\n*All servers failed.*'
   let { dl_link, thumb, title, filesize, filesizeF, } = yt
 let anu =  `
 *Judul:* ${title}

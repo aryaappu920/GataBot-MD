@@ -197,4 +197,5 @@ handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = /^(playmd)$/i
 handler.exp = 0
-module.exports = handler
+module.exports = handler */
+

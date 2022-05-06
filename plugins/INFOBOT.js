@@ -1,19 +1,24 @@
 
 let handler = async (m, { conn }) => {
-    let wm = global.wm
+    let gt = global.gt
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
 
     let str = `
-╭─────[ *Status* ]────✧
-├◌ Aktif selama ${uptime}
-├◌ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
-├◌ ${Object.keys(global.db.data.users).length} Pengguna
-├◌ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
-├◌ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
-╰────────────···
+╭━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━⬣
+├◌ *Activo Durante | Active During* 
+${uptime}
+├◌ *Modo | Mode:* 
+${global.opts['self'] ? 'Self' : 'publik'}
+├◌ *Usuario(s) | Users* 
+${Object.keys(global.db.data.users).length} 
+├◌ *Chat(s) Prohibido(s) | Forbidden Chats*
+${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
+├◌ *Usuario(s) Prohibido(s) | Prohibited Users*
+${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
+╰━━━━━━━━━━━━━━━━⬣
     `.trim()
-conn.send2But(m.chat, str, wm, 'Info', '.info', 'Owner', '.owner',m)
+conn.send3But(m.chat, str, gt, 'Info', '.info', 'Owner', '.owner', 'Owner', '.owner,m)
 conn.reply(str)
 }
 handler.help = ['botstatus']

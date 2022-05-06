@@ -53,7 +53,6 @@ global.gatabot = gt
 global.media = 'https://telegra.ph/file/72168c6f1aaa90315c369.jpg'
 global.instagram = 'https://instagram.com/gata_dios'
 global.youtube = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA'
-global.github = 'https://github.com/GataNina-Li/GataBot-MDv
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&doScale=true&scaleWidth=500&scaleHeight=500&fontsize=100&fillTextType=0&backgroundColor=%23401620&text='
 global.wait = '_*tunggu sedang di proses...*_'
 global.eror = '_*Server Error*_'

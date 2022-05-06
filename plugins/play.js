@@ -28,14 +28,10 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (yt2 === false) throw 'semua server gagal'
   let { dl_link, thumb, title, filesize, filesizeF } = yt
 let anu =  `
-*Título | Title*
-${title}
-*Tamaño del Audio | Audio Size*
-${filesizeF}
-*Tamaño del vídeo | Video Size*
-${yt2.filesizeF}
-*Servidor | Server* 
-${usedServer}
+*Título | Title* ${title}
+*Tamaño del Audio | Audio Size* ${filesizeF}
+*Tamaño del vídeo | Video Size* ${yt2.filesizeF}
+*Servidor | Server* ${usedServer}
 *Enlace | Link* 
 ${vid.url}
 

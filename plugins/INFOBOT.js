@@ -40,13 +40,13 @@ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
                url: instagram	           
              }
            },
+			     {
+             quickReplyButton: {
+               displayText: '𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 | 𝙎𝙥𝙚𝙚𝙙',
+               id: '.ping',
+             }
+	   },
              {
-              urlButton: {
-               displayText: '𝙔𝙤𝙪𝙏𝙪𝙗𝙚',
-               url: youtube	           
-              }
-            },	     
-              {
              quickReplyButton: {
                displayText: '𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 | 𝙎𝙥𝙚𝙚𝙙',
                id: '.ping',
@@ -56,11 +56,11 @@ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
              quickReplyButton: {
                displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪',
                id: '.menu',
-              }
-           }]
-         }
-       }
-     }), { userJid: m.sender, quoted: m });
+             }
+          }]
+        }
+      }
+    }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
     return await conn.relayMessage(
          m.chat,

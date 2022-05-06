@@ -1,4 +1,4 @@
-const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
+/*const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let fs = require('fs')
 let yts = require('yt-search')
@@ -36,7 +36,7 @@ let anu =  `
 ${vid.url}
 
 `
-    /* const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+    const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: anu,
@@ -48,7 +48,7 @@ dan ketik .ytv link YouTube Untuk Mengunduh Video`,
            hydratedButtons: [{
              urlButton: {
                displayText: '📍instagram',
-               url: instagram*/
+               url: instagram
 
 
 //let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/elyas.jpg')}, { upload: conn.waUploadToServer })
@@ -59,12 +59,20 @@ dan ketik .ytv link YouTube Untuk Mengunduh Video`,
            imageMessage: message ${thumb}.
            hydratedContentText: `jika video tidak sesuai
 silahkan ketik .yta link YouTube untuk mengunduh audio
-dan ketik .ytv link YouTube Untuk Mengunduh Video`.trim(),
-           hydratedFooterText: wm,
+dan ketik .ytv link YouTube Untuk Mengunduh Video`,
            hydratedButtons: [{
-           urlButton: {
+             urlButton: {
                displayText: '📍instagram',
                url: instagram
+
+
+
+//`.trim(),
+  //         hydratedFooterText: wm,
+    //       hydratedButtons: [{
+      //     urlButton: {
+        //       displayText: '📍instagram',
+          //     url: instagram
 
              }
 
@@ -106,5 +114,6 @@ handler.command = /^(p|play)$/i
 
 handler.exp = 0
 
-module.exports = handler
+module.exports = handler*/
+
 

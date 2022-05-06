@@ -1,4 +1,4 @@
-/*const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
+const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let fs = require('fs')
 let yts = require('yt-search')
@@ -51,7 +51,7 @@ dan ketik .ytv link YouTube Untuk Mengunduh Video`,
                url: instagram
 
 
-//let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/elyas.jpg')}, { upload: conn.waUploadToServer })
+/*let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/elyas.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
@@ -63,7 +63,7 @@ dan ketik .ytv link YouTube Untuk Mengunduh Video`,
            hydratedButtons: [{
              urlButton: {
                displayText: '📍instagram',
-               url: instagram
+               url: instagram */
 
 
 
@@ -114,9 +114,13 @@ handler.command = /^(p|play)$/i
 
 handler.exp = 0
 
-module.exports = handler*/
+module.exports = handler
 
 
+
+
+
+/*
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let fs = require('fs')

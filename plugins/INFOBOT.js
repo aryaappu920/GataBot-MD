@@ -32,14 +32,27 @@ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
              urlButton: {
                displayText: '📍Instagram',
                url: instagram
-             }
+                  }
 
            },
-               {
+                {
+              urlButton: {
+               displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
+               url: 'https://instagram.com/gata_dios?igshid=YmMyMTA2M2Y='	           
+                  }
+            },
+                             {
+             quickReplyButton: {
+               displayText: '𝙋𝙚𝙧𝙛𝙞𝙡 | 𝙋𝙧𝙤𝙛𝙞𝙡𝙚',
+               id: '.profile',
+             }
+	   },
+                {
              quickReplyButton: {
                displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
                id: '.menu',
-             }
+              }
+                     
 
            }]
          }

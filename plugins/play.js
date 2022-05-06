@@ -30,7 +30,14 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 let anu =  `
 *Título | Title* 
 ${title}
-
+*Descripcion*
+${description}
+*Publicado*
+${publishedTime}
+*Vistas*
+${viewH}
+*Duracion*
+${durationH}
 *Tamaño del Audio | Audio Size* 
 ${filesizeF}
 *Tamaño del vídeo | Video Size* 
@@ -39,17 +46,7 @@ ${yt2.filesizeF}
 ${usedServer}
 *Enlace | Link* 
 ${vid.url}
-
-`
-//*Descripcion*
-//${description}
-//*Publicado*
-//${publishedTime}
-//*Vistas*
-//${viewH}
-//*Duracion*
-//${durationH}
-  
+` 
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {

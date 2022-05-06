@@ -36,7 +36,7 @@ let anu =  `
 ${vid.url}
 
 `
-     /*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: anu,
@@ -48,10 +48,23 @@ dan ketik .ytv link YouTube Untuk Mengunduh Video`,
            hydratedButtons: [{
              urlButton: {
                displayText: '📍instagram',
-               url: instagram*/
+               url: instagram
 
 
-
+let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/elyas.jpg')}, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+         hydratedContentText: anu,
+           imageMessage: message.imageMessage,
+           hydratedContentText: `jika video tidak sesuai
+silahkan ketik .yta link YouTube untuk mengunduh audio
+dan ketik .ytv link YouTube Untuk Mengunduh Video`.trim(),
+           hydratedFooterText: wm,
+           hydratedButtons: [{
+           urlButton: {
+               displayText: '📍instagram',
+               url: instagram
 
              }
 

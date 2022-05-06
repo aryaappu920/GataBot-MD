@@ -31,7 +31,7 @@ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
            hydratedButtons: [{
              urlButton: {
                displayText: '𝙂𝙞𝙩𝙃𝙪𝙗',
-               url: github
+               url: "https://github.com/GataNina-Li/GataBot-MD"
               }   
             },
               {

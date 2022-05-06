@@ -29,7 +29,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let { dl_link, thumb, title, filesize, filesizeF, description, publishedTime, durationH, viewH } = yt
 let anu =  `
 ╭━━━━━━━━━━━━━━━━⬣
-┃ 💖  *Título | Title* c
+┃ 💖  *Título | Title* 
 ┃ ➲ ${title}
 ┃ 🔊 *Tamaño del Audio | Audio Size* 
 ┃ ➲ ${filesizeF}
@@ -47,9 +47,9 @@ let anu =  `
            hydratedContentText: anu,
            locationMessage: { 
            jpegThumbnail: await (await fetch(thumb)).buffer() }, 
-           hydratedFooterText: `jika video tidak sesuai
-silahkan ketik .yta link YouTube untuk mengunduh audio
-dan ketik .ytv link YouTube Untuk Mengunduh Video
+           hydratedFooterText: `si el video no coincide escriba 
+           .yta enlace de YouTube para descargar el audio y escriba 
+           .ytv enlace YouTube para descargar video
 ${gt}`,
            hydratedButtons: [{
              urlButton: {

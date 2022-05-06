@@ -40,6 +40,7 @@ let anu =  `
 ┃ 🎁 *Enlace | Link* 
 ┃ ➲ ${vid.url}
 ╰━━━━━━━━━━━━━━━━⬣
+
 ` 
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -49,7 +50,7 @@ let anu =  `
            jpegThumbnail: await (await fetch(thumb)).buffer() }, 
            hydratedFooterText: `si el video no coincide escriba 
            .yta enlace de YouTube para descargar el audio y escriba 
-           .ytv enlace YouTube para descargar video ${gt}`,
+           .ytv enlace YouTube para descargar video`,
            hydratedButtons: [{
              urlButton: {
                displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',

@@ -1,4 +1,4 @@
-/*const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
+const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let fs = require('fs')
 let yts = require('yt-search')
@@ -15,16 +15,10 @@ let yt2 = false
 let usedServer = servers[0]
 for (let i in servers) {
 let server = servers[i]
-try {
 yt = await yta(vid.url, server)
 yt2 = await ytv(vid.url, server)
 usedServer = server
-break
-} catch (e) {
-m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\nmencoba server lain...'}`)
-}}
-if (yt === false) throw 'semua server gagal'
-if (yt2 === false) throw 'semua server gagal'
+}
 let { dl_link, thumb, title, filesize, filesizeF } = yt
 let anu =  `
 *Judul:* ${title}
@@ -74,4 +68,4 @@ handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = /^(playmd)$/i
 handler.exp = 0
-module.exports = handler */
+module.exports = handler

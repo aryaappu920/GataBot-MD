@@ -27,33 +27,36 @@ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
            hydratedContentText: esce,
            locationMessage: { 
            jpegThumbnail: await (await fetch(fla + bear)).buffer() },           
-           hydratedFooterText: wm,
+           hydratedFooterText: gt,
            hydratedButtons: [{
              urlButton: {
-               displayText: '📍Instagram',
-               url: instagram
-                  }
-
-           },
-                {
+               displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
+               url: github
+              }   
+            },
+              {
               urlButton: {
                displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
-               url: 'youtube'	           
-                  }
-            },
-                             {
+               url: instagram	           
+             }
+           },
+             {
+              urlButton: {
+               displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
+               url: youtube	           
+              }
+            },	     
+              {
              quickReplyButton: {
                displayText: '𝙋𝙚𝙧𝙛𝙞𝙡 | 𝙋𝙧𝙤𝙛𝙞𝙡𝙚',
                id: '.profile',
              }
 	   },
-                {
+             {
              quickReplyButton: {
                displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
                id: '.menu',
               }
-                     
-
            }]
          }
        }

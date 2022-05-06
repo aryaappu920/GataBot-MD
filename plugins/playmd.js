@@ -34,7 +34,7 @@ let anu =  `
 *link sumber:* 
 ${vid.url}
 `
-let message = await prepareWAMessageMedia({ image: fs.readFileSync(thumb)}, { upload: conn.waUploadToServer })
+let message = await prepareWAMessageMedia({ image: thumb }, { upload: conn.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 templateMessage: {
 hydratedTemplate: {

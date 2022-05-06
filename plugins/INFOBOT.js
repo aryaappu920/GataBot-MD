@@ -38,7 +38,7 @@ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
                 {
               urlButton: {
                displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
-               url: 'https://instagram.com/gata_dios?igshid=YmMyMTA2M2Y='	           
+               url: 'youtube'	           
                   }
             },
                              {

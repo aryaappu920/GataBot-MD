@@ -160,11 +160,11 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            jpegThumbnail: fs.readFileSync('./src/welcome.jpg') },
            hydratedFooterText: `🅛=limit 🅟=premium`,
            hydratedButtons: [{*/
-    let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menus/Menuvid3.jpg')}, { upload: conn.waUploadToServer })
+    let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menus/Menuvid3.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
-           imageMessage: message.imageMessage,
+           videoMessage: message.videoMessage,
            hydratedContentText: text.trim(),
            hydratedFooterText: `🅛=limit 🅟=premium`,
            hydratedButtons: [{

@@ -6,8 +6,8 @@ let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
 bear = "Source Code"
 ye = `Wa.me/${m.sender.split`@`[0]}`
-let esce = `╭━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━⬣
-┃ *¡Hola | Hi!* ${ye} 
+let esce = `╭━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
+┃💗 *¡Hola | Hi!* ${ye} 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃𓃠 *Versión de GataBot-MD*
 ┃➥ ${vs}
@@ -24,7 +24,7 @@ let esce = `╭━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]�
 ┃➥ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃ღ *Usuario(s) Prohibido(s) | Prohibited Users*
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
-╰━━━━━━━━━━━━━━━━⬣`/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+╰━━━━━━━━━━━━━━━━━━⬣`/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: esce,

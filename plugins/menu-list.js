@@ -438,22 +438,22 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-     /*let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menus/Menuvid3.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+     let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menus/Menuvid1.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            videoMessage: message.videoMessage,
            hydratedContentText: text.trim(),
            hydratedFooterText: wm,
-           hydratedButtons: [{*/
-	  let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menus/Menuvid1.jpg')}, { upload: conn.waUploadToServer })
+           hydratedButtons: [{
+	  /*let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menus/Menu1.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            imageMessage: message.imageMessage,
            hydratedContentText: text.trim(),
            hydratedFooterText: wm,
-           hydratedButtons: [{
+           hydratedButtons: [{*/
             urlButton: {
                displayText: '𝙂𝙞𝙩𝙃𝙪𝙗',
                url: 'https://github.com/GataNina-Li/GataBot-MD'	       

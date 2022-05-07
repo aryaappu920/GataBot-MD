@@ -40,7 +40,7 @@ let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu
      templateMessage: {
          hydratedTemplate: {
            imageMessage: message.imageMessage,
-           hydratedContentText: text.trim(),
+           hydratedContentText: esce,
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {

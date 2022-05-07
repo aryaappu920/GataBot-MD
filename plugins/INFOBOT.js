@@ -23,8 +23,7 @@ let esce = `╭━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]�
 ┃➥ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃ ◌ *Usuario(s) Prohibido(s) | Prohibited Users*
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
-╰━━━━━━━━━━━━━━━━⬣
-`/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+╰━━━━━━━━━━━━━━━━⬣`/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: esce,
@@ -38,7 +37,7 @@ let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu
          hydratedTemplate: {
            imageMessage: message.imageMessage,
            hydratedContentText: esce,
-           hydratedFooterText: wm,
+           hydratedFooterText: gt,
            hydratedButtons: [{
              urlButton: {
                displayText: '𝙂𝙞𝙩𝙃𝙪𝙗',

@@ -26,13 +26,22 @@ let esce = `
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 ╰━━━━━━━━━━━━━━━━⬣
 `
-     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     /*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: esce,
            locationMessage: { 
            jpegThumbnail: await (await fetch(fla + bear)).buffer() },           
            hydratedFooterText: gt,
+           hydratedButtons: [{*/
+
+let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menus/Menu1.jpg')}, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           imageMessage: message.imageMessage,
+           hydratedContentText: text.trim(),
+           hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
                displayText: '𝙂𝙞𝙩𝙃𝙪𝙗',

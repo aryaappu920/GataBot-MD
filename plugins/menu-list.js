@@ -284,7 +284,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 		  }, {
                   "title": `☰ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪`,
                   "description": "Presentación de todo el Menú.\nPresentation of the entire Menu.",
-                  "rowId": '.? all'
+                  "rowId": '.? allmenu'
                   }, {
                   "title": "☰ 𝘼𝙪𝙨𝙚𝙣𝙩𝙚 & 𝙑𝙤𝙩𝙤 | 𝘼𝙗𝙨𝙚𝙣𝙩𝙚𝙚 & 𝙑𝙤𝙩𝙚",
                   "description": "Mostrando el Menú Ausente.\nShowing the Absent Menu.",

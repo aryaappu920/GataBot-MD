@@ -91,4 +91,25 @@ function clockString(ms) {
     let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
     let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
     return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+	
+    try {
+    let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
+    let who
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
+    else who = m.sender 
+    let premium = global.db.data.users[m.sender].premium
+    let user = global.db.data.users[who]
+    let { exp, limit, level, money, role } = global.db.data.users[m.sender]
+    let { min, xp, max } = levelling.xpRange(level, global.multiplier)
+    let name = conn.getName(m.sender)
+    let d = new Date(new Date + 3600000)
+    let locale = 'es'
+let wib = moment.tz('Sudamerica/Quito').format('HH:mm:ss')
+    let week = d.toLocaleDateString(locale, { weekday: 'long' })
+    let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
+    let date = d.toLocaleDateString(locale, {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    })
 }

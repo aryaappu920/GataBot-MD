@@ -446,7 +446,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
            hydratedContentText: text.trim(),
            hydratedFooterText: wm,
            hydratedButtons: [{*/
-	  let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menus/Menu2.jpg')}, { upload: conn.waUploadToServer })
+	  let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menus/Menu1.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {

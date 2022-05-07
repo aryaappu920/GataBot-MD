@@ -7,7 +7,7 @@ let uptime = clockString(_uptime)
 bear = "Source Code"
 ye = `@${m.sender.split`@`[0]}`
 let esce = `╭━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━⬣
-┃*¡Hola | Hi!* ${ye} 
+┃ *¡Hola | Hi!* ${ye} 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 𓃠 *Versión de GataBot-MD*
 ┃➥ ${vs}

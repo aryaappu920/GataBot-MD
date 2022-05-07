@@ -5,7 +5,7 @@ let handler = async (m, { command }) => {
 let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
 bear = "Source Code"
-ye = `@${m.sender.split`@`[0]}`
+ye = `@${m.sender.split`Wa.me/`[0]}`
 let esce = `╭━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━⬣
 ┃ *¡Hola | Hi!* ${ye} 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈

@@ -3,15 +3,17 @@ let handler = async (m, { conn }) => {
     let uptime = clockString(_uptime)
 
 m.reply(conn.sendBut(m.chat, `╭━━〔 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊́𝙉 | 𝙍𝙐𝙉𝙏𝙄𝙈𝙀 〕━⬣
-┃
+┃𓃠 *Versión de GataBot-MD*
+┃➺ ${vs}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *Activa durante:* ${uptime}
 ┃ *Active during:* ${uptime}
 ╰━━━━━━━━━━━━━━━━━━━━━⬣
     `, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 }
-handler.help = ['runtime']
+handler.help = ['ejecucion | runtime']
 handler.tags = ['info']
-handler.command = /^(uptime|runtime)$/i
+handler.command = /^(uptime|runtime|ejecucion|ejecución|ejecucción|ejecuccion|ejecusion|runtimes|uptimes)$/i
 
 module.exports = handler
 

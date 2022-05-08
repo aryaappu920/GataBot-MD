@@ -27,7 +27,7 @@ let esce = `╭━━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐�
          hydratedTemplate: {
            hydratedContentText: esce,
            locationMessage: { 
-           jpegThumbnail: await (await fetch(fla + bear)).buffer() },           
+           jpegThumbnail: await (await fetch(fla + bear)).buffer() },            
            hydratedFooterText: gt,
            hydratedButtons: [{*/
 let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menus/Menu1.jpg')}, { upload: conn.waUploadToServer })

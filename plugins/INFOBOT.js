@@ -81,6 +81,7 @@ let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu
 handler.help = ['estado | status']
 handler.tags = ['info']
 handler.command = /^estado|status|estate|state|stado|stats|botstat(us)?$/i
+handler.exp = 4
 
 module.exports = handler
 

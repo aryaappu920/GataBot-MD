@@ -15,5 +15,6 @@ m.reply(conn.sendBut(m.chat, `╭〔 𝙏𝙊𝙏𝘼𝙇 𝘾𝘼𝙍𝘼𝘾�
 
 handler.help = ['totalctr | totalfeature']
 handler.tags = ['info']
-handler.command = ['totalfitur|totalfeature|featuretotal|ctrtotal|totalcaracteristicas|caracteristicastotal|totalctrtc|totalcttc|totalctrt|totalctrs|totalctr']
+handler.command = /^(totalfitur|totalfeature|featuretotal|ctrtotal|totalcaracteristicas|caracteristicastotal|totalctrtc|totalcttc|totalctrt|totalctrs|totalctr)$/i
+handler.exp = 5
 module.exports = handler

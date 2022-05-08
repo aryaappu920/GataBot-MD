@@ -1,5 +1,5 @@
-let handler = async(m, { conn, text }) => {
-    if (!text) throw '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n'
+let handler = async(m, { conn, text, usedPrefix, command }) => {
+    if (!text) throw '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n*Escriba un reporte.*\n*Ejemplo:*\n${usedPrefix + command} El comando ${usedPrefix}jadibot *no funciona.*'
     if (text.length > 300) throw 'Maaf Teks Terlalu Panjang, Maksimal 300 Teks!'
     const laporan = `*「 REPORT 」*\nNomor : wa.me/${m.sender.split`@`[0]}\nPesan : ${text}`
     for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid && v != '6281515860089@s.whatsapp.net'))

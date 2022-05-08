@@ -62,8 +62,8 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
          { messageId: template.key.id }
      )
 }
-handler.help = ['sc', 'sourcecode']
+handler.help = ['gataig | catig']
 handler.tags = ['info']
-handler.command = /^(sc|sourcecode)$/i
+handler.command = /^(gataig|catig|igcat|iggata|iggatabot|gatabotig)$/i
 
 module.exports = handler

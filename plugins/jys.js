@@ -11,12 +11,20 @@ bear = "Source Code"
 ye = `Wa.me/${m.sender.split`@`[0]}`
 let esce = `✨ ¡Hola! ${ye}
 Para estar al tanto de GataBot-MD, Visita la Cuenta Oficial de Gata Dios en Instagram 😸`
-     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     /*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: esce,
            locationMessage: { 
            jpegThumbnail: await (await fetch(fla + bear)).buffer() },           
+           hydratedFooterText: gt,
+           hydratedButtons: [{*/
+let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menus/Menuvid3.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+     templateMessage: {
+         hydratedTemplate: {
+           videoMessage: message.videoMessage,
+           hydratedContentText: text.trim(),
            hydratedFooterText: gt,
            hydratedButtons: [{
              urlButton: {

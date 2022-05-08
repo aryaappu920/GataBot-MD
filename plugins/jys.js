@@ -1,6 +1,6 @@
 /**
-* jangan ganti ya kakak kakak sekalian
-* ini cuma buat ninggalin credit gw doang :)
+POR FAVOR TENGAN LA AMABILIDAD Y BONDAD DE NO CAMBIAR MÍNIMAMENTE LOS CRÉDITOS DE GATABOT-MD, 
+SI VAS A AÑADIR TUS DATOS O CRÉDITOS, ESTA BIEN. PERO NO QUITEN LOS QUE YA ESTAN DE GATABOT-MD, GRACIAS
 **/
 
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
@@ -8,31 +8,33 @@ let fetch = require('node-fetch')
 let fs = require('fs')
 let handler = async (m, { command }) => {
 bear = "Source Code"
-ye = `@${m.sender.split`@`[0]}`
-let esce = `
-Hai ${ye} Lagi Nyari Sc Ya? 
-
-Nih Link Sc Nya Dibawah :
-https://youtu.be/AqIPxerS7XI
-
-_*Jangan Lupa Di Subscribe*_`
+ye = `Wa.me/${m.sender.split`@`[0]}`
+let esce = `✨ ¡Hola! ${ye}
+Para estar al tanto de GataBot-MD, Visita la Cuenta Oficial de Gata Dios en Instagram 😸`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: esce,
            locationMessage: { 
            jpegThumbnail: await (await fetch(fla + bear)).buffer() },           
-           hydratedFooterText: wm,
+           hydratedFooterText: gt,
            hydratedButtons: [{
              urlButton: {
-               displayText: '📍Instagram',
+               displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
                url: instagram
+             }
+
+           },
+                             {
+             quickReplyButton: {
+               displayText: '𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 | 𝙎𝙥𝙚𝙚𝙙',
+               id: '.ping',
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
+               displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪',
                id: '.menu',
              }
 

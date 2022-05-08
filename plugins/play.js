@@ -27,8 +27,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (yt === false) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Todos los servidores fallaron.*\n*All servers failed.*'
   if (yt2 === false) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Todos los servidores fallaron.*\n*All servers failed.*'
   let { dl_link, thumb, title, filesize, filesizeF, } = yt
-let anu =  `
-╭━━━━━━━━━━━━━━━━⬣
+let anu =  `╭━━━━━━━━━━━━━━━━⬣
 ┃ 💖  *Título | Title* 
 ┃ ➲ ${title}
 ┃ 🔊 *Tamaño del Audio | Audio Size* 
@@ -41,7 +40,6 @@ let anu =  `
 ┃ ➲ ${vid.url}
 ╰━━━━━━━━━━━━━━━━⬣ 
 `
-
 /* *Título | Title* 
 ${title}
 *Tamaño del Audio | Audio Size* 
@@ -52,7 +50,6 @@ ${yt2.filesizeF}
 ${usedServer}
 *Enlace | Link* 
 ${vid.url}*/
-
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {

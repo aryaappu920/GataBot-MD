@@ -9,9 +9,8 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
     //m.reply('╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮\n\n✔️Masalah telah di laporkan ke Owner Bot, laporan palsu/main2 tidak akan ditanggapi!')
   m.reply(conn.sendBut(m.chat, `╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮\n\nEl reporte ha sido enviado a mí Creadora. Tendrá una respuesta pronto. De ser Falso será Ignorado el reporte.\nThe report has been sent to my Creator. You will have an answer soon. If false, the report will be ignored.`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 }
-handler.help = ['reporte'].map(v => v + ' *comando con error*')
-handler.help = [' bug'].map(v => v + ' *failed command*')
+handler.help = ['reporte | bug'].map(v => v + ' *comando con error*')
 handler.tags = ['info']
 handler.command = /^(bug|report|reports|bugs|request|requests|reportar|reporte|reportes|buggata|gatabug|reportes|informe|informes)$/i
-
+handler.exp = 7
 module.exports = handler

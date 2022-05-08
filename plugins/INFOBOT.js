@@ -6,7 +6,7 @@ let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
 bear = "Source Code"
 ye = `Wa.me/${m.sender.split`@`[0]}`
-let esce = `╭━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
+let esce = `╭━━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
 ┃💗 *¡Hola | Hi!* ${ye} 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃𓃠 *Versión de GataBot-MD*

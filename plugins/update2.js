@@ -4,7 +4,7 @@ const { promisify } = require('util')
 const { join } = require('path')
 
 let confirmation = {}
-let repository = 'raselcomel/lucubot-md'
+let repository = 'GataNina-Li/GataBot-MD'
 let branch = 'multi-device'
 
 async function handler(m, { text }) {

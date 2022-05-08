@@ -2,7 +2,15 @@ let handler = async (m, { conn, args, command }) => {
 let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length;
-conn.reply(m.chat, `Total Fitur saat ini: ${totalf}`,m)
+m.reply(conn.sendBut(m.chat, `╭━〔  〕━⬣ 
+┃𓃠 *Versión de GataBot-MD*
+┃➺ ${vs}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *Características totales actualmente*
+┃➺ ${totalf}
+┃ *Total features currently*
+┃➺ ${totalf}
+╰━━━━━━━━━━━━━━━━━━━━━⬣`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 }
 
 handler.help = ['totalfitur']

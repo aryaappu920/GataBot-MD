@@ -11,6 +11,6 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
 }
 handler.help = ['reporte | bug'].map(v => v + ' *comando con error*')
 handler.tags = ['info']
-handler.command = /^(bug|report|reports|bugs|request|requests|reportar|reporte|reportes|buggata|gatabug|reportes|informe|informes)$/i
+handler.command = /^(bug|report|reports|bugs|request|requests|reportar|reporte|reportes|buggata|gatabug|reportes|informe|informes)$/i 
 handler.exp = 7
 module.exports = handler

@@ -2,11 +2,12 @@ let handler = async (m, { conn }) => {
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
 
-m.reply(`
-┌─〔 R U N T I M E 〕
-├ Bot Aktif Selama ${uptime}
-└────
-    `)
+m.reply(conn.sendBut(m.chat, `╭━━〔 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊́𝙉 | 𝙍𝙐𝙉𝙏𝙄𝙈𝙀 〕━⬣
+┃
+┃ *Activa durante:* ${uptime}
+┃ *Active during:* ${uptime}
+╰━━━━━━━━━━━━━━━━━━━━━⬣
+    `, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 }
 handler.help = ['runtime']
 handler.tags = ['info']

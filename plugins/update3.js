@@ -2,7 +2,7 @@ let { execSync } = require("child_process");
 let handler = async (m, { conn, text, isROwner }) => {
   if (global.conn.user.jid == conn.user.jid) {
     let stdout = execSync(
-      "git remote set-url origin git@github.com:GataNina-Li/GataBot-MD.git && git pull" +
+      "git remote set-url origin https://github.com/GataNina-Li/GataBot-MD.git && git pull" +
         (isROwner && text ? " " + text : "")
     );
     if (isROwner)

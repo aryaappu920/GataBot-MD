@@ -45,17 +45,6 @@ global.DATABASE = global.db // Backwards Compatibility
 global.loadDatabase = async function loadDatabase() {
   if (global.db.READ) return new Promise((resolve) => setInterval(function () { (!global.db.READ ? (clearInterval(this), resolve(global.db.data == null ? global.loadDatabase() : global.db.data)) : null) }, 1 * 1000))
   if (global.db.data !== null) return
-  if (opts['big-qr'] || opts['server']) conn.on('qr', qr => generate(qr, { small: false }))
-  let lastJSON = JSON.stringify(global.db.data)
-  if (!opts['test']) setInterval(() => {
-  conn.logger.info('Saving database . . .')
-  if (JSON.stringify(global.db.data) == lastJSON) conn.logger.info('Database is up to date')
-  else {
-    global.db.save()
-    conn.logger.info('Done saving database!')
-    lastJSON = JSON.stringify(global.db.data)
-  }
-}, 60 * 1000)
   global.db.READ = true
   await global.db.read()
   global.db.READ = false

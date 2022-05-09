@@ -259,7 +259,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 ┃➺ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Usuario(s) Prohibido(s) | Prohibited Users*
-┃➺ ${Object//.entries(global.db.data.users).filter(user => user[1].banned).length}
+┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰━━━━━━━━━━━━━━━━━━━━━⬣`,
             buttonText: '𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 | 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐',
             listType: 1,

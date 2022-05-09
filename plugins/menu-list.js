@@ -59,7 +59,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  //let arrayMenu = ['info', 'all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools']
+  let arrayMenu = ['info', 'all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'info': '*MENU INFO*',	  
@@ -238,7 +238,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 }                        
       const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
-            title: `╭─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰─────────────────────❀`,
+            //title: `╭─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰─────────────────────❀`,
             description: `╭━━━━━━〔 *${wm}* 〕━━━━━━⬣	    
 ┃✪ *Tiempo Actual | Current Time*	    
 ┃➺ ${time}   

@@ -59,9 +59,10 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools']
+  let arrayMenu = ['info', 'all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
+  'info': '*MENU INFO*',	  
   'main': '*MENU UTAMA*',
   'advanced': '*ADVANCED*',
   'absen': '*MENU ABSEN*',
@@ -88,6 +89,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'shortlink': '*SHORT LINK',
   'tools': '*MENU TOOLS*',
   'vote': '*MENU VOTING*',
+  }
+  if (teks == 'info') tags = {
+  'info': '*MENU INFO*',
   }
   if (teks == 'absen') tags = {
     'absen': 'MENU ABSEN',
@@ -119,9 +123,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'image') tags = {
   'image': '*MENU IMAGE*',
-  }
-  if (teks == 'info') tags = {
-  'info': '*MENU INFO*',
   }
   if (teks == 'internet') tags = {
   'internet': '*INTERNET*',
@@ -479,7 +480,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
                id: '.profile',
              }
 	   },
-           {
+           //{
              quickReplyButton: {
                displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪',
                id: '.menu',
@@ -495,7 +496,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
          { messageId: template.key.id }
      )
 } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Lo siento, el Menú tiene un error. Informa inmediatamente a mí Creadora para una pronta solución.*\n*Sorry, the Menu has an error. Report immediately to my Creator for a prompt solution.*', m)
     throw e
   }
 }
